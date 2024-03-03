@@ -1,2 +1,3 @@
 streamlit: https://5ac8ulswgkhtdpwucg4tun.streamlit.app/
 google colab: https://colab.research.google.com/drive/1wb4GOScNDg_0gvvZo79Y3IbS__-Da1KB?usp=sharing
+link github: https://github.com/yohanabtrc/ProyekAnalisisData_Yohana.git
