@@ -8,6 +8,7 @@ Tahap Analisa yang dilakukan:
 
 2. Import library yang digunakan
 3. Data Wrangling
+
    a. Gathering data
     - import data dari google drive dengan perintah ! gdown --id linkdataset
    
@@ -24,11 +25,11 @@ Tahap Analisa yang dilakukan:
     - menghapus duplikasi
     - melakukan drop terhadap baris yang terdapat data kosong
     - memeriksa apakah masih ada dataset yang terdapat data kosong/null
-4. Exploratory Data Analysis (EDA)
+5. Exploratory Data Analysis (EDA)
    - Explore data dari masing-masing dataset
    - melakukan merge pada dataset
    - melakukan .groupby
-5. Visualization & Explanatory Analysis
+6. Visualization & Explanatory Analysis
    - Bagaimana demografo pelanggan yang dimiliki oleh perusahaan : melakukan visualisasi dengan bar chart
    - Bagaimana performa penjualan dalam beberapa waktu belakangan : melakukan visualisasi dengan bar chart berdasarkan 
      penjualan tiap bulannya.
