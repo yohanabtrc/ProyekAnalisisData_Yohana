@@ -12,14 +12,12 @@ all_df = pd.read_csv('all_data.csv')
 
 st.title("Sales Dashboard")
 
-# Display the DataFrame
+
 st.subheader("Data Overview")
 st.dataframe(all_df)
 
-# Load your data (replace 'your_data.csv' with the actual file name)
-all_df = pd.read_csv('all_data.csv')  # Make sure to replace 'your_data.csv' with the actual file name
+all_df = pd.read_csv('all_data.csv')  
 
-# Function to generate the top 10 states bar plot
 def top_states_bar_plot(data):
     bystate_df = data.groupby(by="customer_city").customer_id.nunique().reset_index()
     bystate_df.rename(columns={"customer_id": "customer_count"}, inplace=True)
@@ -36,20 +34,15 @@ def top_states_bar_plot(data):
 
     return plt
 
-# Function to generate the monthly orders bar plot
+
 def monthly_orders_bar_plot(data):
-    # Check if 'order_approved_at' column exists in the DataFrame
     if 'order_approved_at' not in data.columns:
         st.error("Error: 'order_approved_at' column not found in the DataFrame.")
         return None
 
-    # Convert 'order_approved_at' to datetime if not already
     data['order_approved_at'] = pd.to_datetime(data['order_approved_at'], errors='coerce')
 
-    # Drop rows with null values in 'order_approved_at' or fill with a default value
     data = data.dropna(subset=['order_approved_at'])
-    # Alternatively, you can fill null values with a default datetime value:
-    # data['order_approved_at'].fillna(pd.Timestamp('default_datetime_value'), inplace=True)
 
     monthly_orders_df = data.resample(rule='M', on='order_approved_at').agg({
         "order_id": "nunique",
@@ -82,17 +75,13 @@ def monthly_orders_bar_plot(data):
 
 # Streamlit App
 st.title("Sales Dashboard")
-
-# Display the top states bar plot
 st.subheader("Top 10 States by Customer Count")
 top_states_plot = top_states_bar_plot(all_df)
 st.pyplot(top_states_plot)
 
-# Display the monthly orders bar plot
 st.subheader("Monthly Orders")
 monthly_orders_plot = monthly_orders_bar_plot(all_df)
 
-# Check if the plot is available before displaying
 if monthly_orders_plot:
     st.pyplot(monthly_orders_plot)
 else:
