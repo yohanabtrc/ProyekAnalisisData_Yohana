@@ -22,14 +22,14 @@ Tahap Analisa yang dilakukan:
     - menghapus duplikasi
     - melakukan drop terhadap baris yang terdapat data kosong
     - memeriksa apakah masih ada dataset yang terdapat data kosong/null
-  4. Exploratory Data Analysis (EDA)
-     - Explore data dari masing-masing dataset
-     - melakukan merge pada dataset
-     - melakukan .groupby
-  5. Visualization & Explanatory Analysis
-     - Bagaimana demografo pelanggan yang dimiliki oleh perusahaan : melakukan visualisasi dengan bar chart
-     - Bagaimana performa penjualan dalam beberapa waktu belakangan : melakukan visualisasi dengan bar chart berdasarkan 
-       penjualan tiap bulannya.
+4. Exploratory Data Analysis (EDA)
+   - Explore data dari masing-masing dataset
+   - melakukan merge pada dataset
+   - melakukan .groupby
+5. Visualization & Explanatory Analysis
+   - Bagaimana demografo pelanggan yang dimiliki oleh perusahaan : melakukan visualisasi dengan bar chart
+   - Bagaimana performa penjualan dalam beberapa waktu belakangan : melakukan visualisasi dengan bar chart berdasarkan 
+     penjualan tiap bulannya.
 
 Conclusion:
 Conclution pertanyaan 1: Berdasarkan demografi, dari seluruh kota asal customer, didapatkan hasil bahwa 10 kota dengan   tingkat penjualan tertinggi adalah san paulo, rio de janiero, belo harizonte. brasilia, curitiba, campinas, portoo alegre, salvador, guarulhos, san bernardo da campo.
