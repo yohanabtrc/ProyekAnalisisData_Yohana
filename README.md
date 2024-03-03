@@ -10,6 +10,7 @@ Tahap Analisa yang dilakukan:
 3. Data Wrangling
    a. Gathering data
     - import data dari google drive dengan perintah ! gdown --id linkdataset
+   
    b. Assesing Data
     - melakukan pemeriksaaan terkait dataset yang digunakan
     - .info()
@@ -18,6 +19,7 @@ Tahap Analisa yang dilakukan:
     - memeriksa apakah ada kolom yang terdapat bagian kosong (.isna().sum())
     - memeriksa apakah terdapat dataset yang terindikasi terduplikasi
     - .describe()
+   
    c. Cleaning Data
     - menghapus duplikasi
     - melakukan drop terhadap baris yang terdapat data kosong
